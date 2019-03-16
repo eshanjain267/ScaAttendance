@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="60dp"
+        app:srcCompat="@drawable/ic_sca_logo" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/sp"
+        android:layout_toEndOf="@id/tv2"
+       android:hint="Mobile No."
+        android:maxLength="10"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textColor="#FF000000"
+        android:layout_marginTop="40dp"
+      android:layout_alignStart="@id/mobile"
+        android:layout_below="@id/mobile"
+
+
+        />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/pwd"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+
+
+        />
+
+
+
+</RelativeLayout>
+
